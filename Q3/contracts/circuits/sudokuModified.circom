@@ -29,12 +29,12 @@ template sudoku() {
            
              usRangeProof[i][j]=RangeProof(32);
              usRangeProof[i][j].in<== puzzle[i][j];
-             usRangeProof[i][j].range[0]<==1;
+             usRangeProof[i][j].range[0]<==0;
              usRangeProof[i][j].range[1]<==9;
 
              sRangeProof[i][j]=RangeProof(32);
              sRangeProof[i][j].in<== solution[i][j];
-             sRangeProof[i][j].range[0]<==1;
+             sRangeProof[i][j].range[0]<==0;
              sRangeProof[i][j].range[1]<==9;
              
              sRangeProof[i][j].out===usRangeProof[i][j].out;
