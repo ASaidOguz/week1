@@ -16,6 +16,6 @@ template RangeProof(n) {
     low.in[1]<==range[0];
     high.in[0]<==in;
     high.in[1]<==range[1];
-    out<==low.out*high.out;
+    out<==(1-low.out)*(1-high.out)S;
     // [assignment] insert your code here
 }
